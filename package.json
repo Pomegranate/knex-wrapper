@@ -1,0 +1,20 @@
+{
+  "name": "@pomofficial/knex",
+  "version": "0.0.0",
+  "description": "Pomegranate v6 Knex plugin. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Pomegranate",
+    "Plugin",
+    "SQL",
+    "Knex"
+  ],
+  "author": "Jim Bulkowski <jim.b@paperelectron.com> (http://paperelectron.com)",
+  "license": "MIT",
+  "dependencies": {
+    "knex": "^0.15.2"
+  }
+}
