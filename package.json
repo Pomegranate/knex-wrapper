@@ -1,6 +1,6 @@
 {
   "name": "@pomofficial/knex",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Pomegranate v6 Knex plugin. ",
   "main": "index.js",
   "scripts": {
