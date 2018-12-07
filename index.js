@@ -7,7 +7,7 @@
 
 'use strict';
 const KnexCtor = require('knex')
-const pg = require('pg')
+
 exports.options = {
   client: 'pg',
   connection: {
@@ -26,12 +26,13 @@ exports.metadata = {
 }
 
 exports.plugin = {
-  load: function(Options, PluginFiles, Injector, Logger) {
-    console.log(Options)
+  load: function(Options, Logger) {
+
     let client = KnexCtor(Options)
     return client
   },
-  stop: function(Knex){
-    console.log(Knex)
+  stop: function(Logger, Knex){
+    Logger.log('Attempting to close DB connection.')
+    return Knex.destroy()
   }
 }
