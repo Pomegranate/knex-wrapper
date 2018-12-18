@@ -32,6 +32,9 @@ exports.plugin = {
     return client
   },
   stop: function(Logger, Knex){
+    if(!Knex){
+      return null
+    }
     Logger.log('Attempting to close DB connection.')
     return Knex.destroy()
   }
